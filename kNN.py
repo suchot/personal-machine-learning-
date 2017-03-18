@@ -46,7 +46,7 @@ def autoNorm(dataSet):
 
 def datingClassTest():
     hoRatio = 0.10
-    datingDataMat,datingLabels = file2matrix('datingTestSet2.txt') 
+    datingDataMat,datingLabels = file2matrix('G:\\桌面\\jupyter notebook\\datingTestSet2.txt') 
     normMat, ranges,minVals = autoNorm(datingDataMat)
     m = normMat.shape[0]#shape函数可以导出矩阵的形状[0]为行数[1]为列数
     numTestVecs = int(m*hoRatio)
